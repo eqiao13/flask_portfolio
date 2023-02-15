@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Eve Qiao Design</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css')}}" rel="stylesheet" type="text/css">
+
+    <!-- Custom CSS -->
+    <link href="{{ url_for('static', filename='css/agency.css')}}" rel="stylesheet" type="text/css">
+
+    <!-- Custom Fonts -->
+    <link href="{{ url_for('static', filename='font-awesome/css/font-awesome.min.css')}}" rel="stylesheet" type="text/css">
+    <link href="https://www.google.com/fonts#UsePlace:use/Collection:Libre+Baskerville:400,400italic,700|Open+Sans:400,400italic,600,700,800">
+
+    <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='img/favicon.ico')}}">
+
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-68576215-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" class="index">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <img src="{{ url_for('static', filename='img/logos.png')}}" id="logos">
+                <a class="navbar-brand page-scroll" href="#page-top">Eve Qiao</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#team">About</a>
+                    </li>
+
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+
+            <div class="intro-text">
+            	<img src="{{ url_for('static', filename='img/logob.png')}}" id="logob">
+                	<div class="intro-lead-in">Hello! I'm Eve, and I do Graphic &#38; Web Design.</div>
+                	<div class="intro-heading">It's Nice To Meet You!</div>
+                	<a href="#portfolio" class="page-scroll btn btn-xl">Tell Me More</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Portfolio Grid Section -->
+    <section id="portfolio" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Portfolio</h2>
+                    <h3 class="section-subheading text-muted"></h3>
+                </div>
+            </div>
+            <div class="row">
+                 <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="{{ url_for('static', filename='img/portfolio/chowa-preview.png')}}" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Harmony In Ramen</h4>
+                        <p class="text-muted">Packaging Design</p>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="{{ url_for('static', filename='img/portfolio/nature-preview.jpg')}}" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Embracing Nature</h4>
+                        <p class="text-muted">Responsive Web Design</p>
+                    </div>
+                </div>
+
+
+
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="{{ url_for('static', filename='img/portfolio/insquire-preview.png')}}" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Stress Relief Companion</h4>
+                        <p class="text-muted">App Design InVision Prototype</p>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="{{ url_for('static', filename='img/portfolio/kirakira-preview.png')}}" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Living Lolita</h4>
+                        <p class="text-muted">Branding</p>
+                    </div>
+                </div>
+
+
+                 <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="{{ url_for('static', filename='img/portfolio/nyk-preview.png')}}" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Answering Tough Questions</h4>
+                        <p class="text-muted">Responsive Website Design</p>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="{{ url_for('static', filename='img/portfolio/newsletter-preview.png')}}" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Newsletter Run</h4>
+                        <p class="text-muted">E-Newsletter Design</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Team Section -->
+    <section id="team" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">A Little About Me</h2>
+                    <h3 class="section-subheading text-muted"></h3>
+                </div>
+            </div>
+            <div class="row">
+
+
+
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="{{ url_for('static', filename='img/team/Eve_Qiao.jpg')}}" class="img-responsive img-circle" alt="">
+                        <h4></h4>
+                        <p class="text-muted">Graphic &#43; Web Design</p>
+                        <ul class="list-inline social-buttons">
+                            <li><a href="https://www.linkedin.com/in/eveqiao" target="_blank"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+
+                <div class="col-sm-4">
+
+                <p>Hello, my name is Eve Qiao, and I am a Graphic Designer at Zacks Professional Services. I design and code emails, create landing pages and produce PDFs for many of our internal clients to use to sell their products. I also create marketing visuals for our YouTube channel that has garnered many interests and sales for our clients. </p>
+
+                <p>Through engaging and professional marketing pieces, I help our clients gain interest from potential customers but also urging existing customers to discover new products and explore updates to existing software solutions they may already use from Zacks.</p>
+
+                <p>I love drinking tea and coffee, and am curious by nature. I hope to get a chance to work with you in the future!</p>
+
+                <p> <a id="resume" href="{{ url_for('static', filename='resume/Qiao_Eve_resume2021.pdf')}}" target="_blank">Download My Resume!</a> </p>
+
+
+
+                </div>
+
+
+
+                <div class="col-sm-3" id="contact">
+
+
+
+                <div class="col-sm-3 text-center">
+                    <h3 class="section-heading">Let's Get In Touch</h3>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <form name="sentMessage" id="contactForm" novalidate>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Your Name *" id="name" required data-validation-required-message="Please enter your name.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="Your Email *" id="email" required data-validation-required-message="Please enter your email address.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    <input type="tel" class="form-control" placeholder="Your Phone *" id="phone" required data-validation-required-message="Please enter your phone number.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    <textarea class="form-control" placeholder="Your Message *" id="message" required data-validation-required-message="Please enter a message."></textarea>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="col-sm-12 text-center">
+                                <div id="success"></div>
+                                <button type="submit" class="btn btn-xl">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+                </div>
+            </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <span class="copyright">Text and Images Copyright &copy; Eve Qiao Design 2019</span>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+    <!-- Portfolio Modals -->
+    <!-- Use the modals below to showcase details about your portfolio projects! -->
+
+   <!-- Portfolio Modal 1 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Harmony In Ramen</h2>
+
+                         <div id="des">
+                            <aside id="general">
+                                    <ul class="list-inline">
+                                        <li>Date: Spring 2016</li>
+                                        <li>Client: Paperboard Packaging Alliance Student Competition</li>
+                                        <li>Category: Packaging Design </li>
+                                        <li>Project members:
+                                            <br/>
+                                            Eve Qiao
+                                            <div class="members">Research, Logo Design, Packaging Design, Print Design</div>
+
+                                            Aline Brantis
+                                            <div class="members">Research, Logo Design, Packaging Design, Print Design</div>
+
+                                            Marc Entenberg
+                                            <div class="members">Research, Package Structural Design</div>
+
+                                            Maegan Schmauder
+                                            <div class="members">Research, Package Structural Design</div>
+                                            </li>
+                                    </ul>
+                                </aside>
+
+                           <div id="para">
+                                    <p>In this project, we were given the task to heighten the value of a currently low value dry food product that is on the market. We chose cup ramen because when people mention them, they usually think that it is cheap and unhealthy. Because of this, we thought that this product would have the most potential. We want to change that perception for consumers, so that they realize that there is potential for a healthier meal in the cup ramen market. Our concept for a new bowl is to have a bigger portion size with a variety of healthier ingredients so that customers can have a healthy and filling meal. </p>
+
+                                    <p>Our package is portable, but also easy to store at home. The package includes chopsticks, which makes bringing and making lunch simpler and easier. Our bowl-shaped package opens up to a bigger size, so there is more room after the noodles have expanded from cooking. After cooking, the three flaps that keeps the package closed can be easily teared off for eating. </p>
+
+                                 </div>
+
+                            <div class="kira">
+
+                                    <div class="kpiece">
+                                        <img class="img-responsive img-centered" src="{{ url_for('static', filename='img/portfolio/chowa-logo.png')}}" alt="">
+                                    <h4 class="khead">Logo Ideation</h4>
+                                        <img class="img-responsive img-centered" src="{{ url_for('static', filename='img/portfolio/chowa-logosketches.png')}}" alt="">
+                                    </div>
+
+                            <div>
+                                <hr/>
+                                <img class="img-responsive img-centered" src="{{ url_for('static', filename='img/portfolio/chowa-front.png')}}" alt="">
+                                <hr/>
+                            </div>
+
+                           <div>
+                                <img class="img-responsive img-centered" src="{{ url_for('static', filename='img/portfolio/c-package1.jpg')}}" alt="">
+                                <img class="img-responsive img-centered" src="{{ url_for('static', filename='img/portfolio/c-package2.jpg')}}" alt="">
+                                <img class="img-responsive img-centered" src="{{ url_for('static', filename='img/portfolio/c-package3.jpg')}}"   alt="">
+                                <img class="img-responsive img-centered" src="{{ url_for('static', filename='img/portfolio/c-package4.jpg')}}"   alt="">
+                                <img class="img-responsive img-centered" src="{{ url_for('static', filename='img/portfolio/chowa-diagram.jpg')}}" alt="">
+                                <img class="img-responsive img-centered" src="{{ url_for('static', filename='img/portfolio/c-pop.png')}}" alt="" title="Point of Purchase 3D Mockup">
+
+                           </div>
+
+
+                        </div>
+
+                        </div>
+
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 2 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Embracing Nature</h2>
+
+                        <div id="des">
+                         	<aside id="general">
+                             <ul class="list-inline">
+                                <li>Date: Fall 2014</li>
+                                <li>Client: RIT Nature Trails</li>
+                                <li>Category: Responsive Web and InVision Prototype Design </li>
+                                <li>Project Members:
+                                <br/>
+                                	Eve Qiao
+                                	<div class="members">Design Comp, Map Creation, Wireframe, Trails Page</div>
+                                	Jenna Hebeler
+                                	<div class="members">Design Comp, Wireframe, Photo, Get Involved Page</div>
+                                	Adriana Fux
+                                	<div class="members">Design Comp, Style Guide, Wireframe, About Page</div>
+                                	Emilie Fang
+                                	<div class="members">Design Comp, Explore Page</div>
+                                </li>
+                            </ul>
+                            </aside>
+
+                            <div id="para">
+                            	<p>In this collaborative project we were given a location on RIT campus, in our case it was the Nature Trail. Our main goals were to promote and increase the awareness of students on campus, and educate them on what to and not to do through an interactive experience by using the prototyping tool, InVison, to create the desktop, tablet, and mobile experience. We wanted to create a clean and sophisticate look for our site and app that would appeal to college students, but also to staff and the community near our school.</p>
+
+                            	<p>You can view the InVision prototype here <a href="{{ url_for('static', filename='img/portfolio/nature-invision-desktop/index.html')}}" target="_blank">desktop</a>, <a href="{{ url_for('static', filename='img/portfolio/nature-invision-tablet/index.html')}}" target="_blank">tablet</a>, and <a href="https://projects.invisionapp.com/share/ES1MW4GBY#/screens" target="_blank">mobile</a>.</p>
+
+                           		<p> Please click <a href="{{ url_for('static', filename='img/portfolio/RITNatureTrails_Process.pdf')}}" target="_blank">here</a> to view the process work. </p>
+                            </div>
+
+                            </div>
+                           		<img class="img-responsive img-centered" src="{{ url_for('static', filename='img/portfolio/nature.jpg')}}" alt="">
+                            <img class="img-responsive img-centered" src="{{ url_for('static', filename='img/portfolio/nature-about.png')}}" alt="">
+                            <img class="img-responsive img-centered" src="{{ url_for('static', filename='img/portfolio/nature-explore.png')}}" alt="">
+                            <img class="img-responsive img-centered" src="{{ url_for('static', filename='img/portfolio/nature-trail.png')}}" alt="">
+                             <img class="img-responsive img-centered" src="{{ url_for('static', filename='img/portfolio/nature-trail1.png')}}" alt="">
+                             <img class="img-responsive img-centered" src="{{ url_for('static', filename='img/portfolio/nature-get-involved.png')}}" alt="">
+
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 3 -->
+     <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Stress Relief Companion</h2>
+
+                            <div id="des">
+                         		<aside id="general">
+                            		<ul class="list-inline">
+                                			<li>Date: Fall 2015</li>
+                                			<li>Client: RIT Wellness</li>
+                                			<li>Category: App InVision Prototype Design </li>
+                                			<li>Project members:
+												<br/>
+												Eve Qiao
+												<div class="members">Wireframe, Site Map, Research, Print Design, User research and testing, Website creation </div>
+
+												Mary Stalter
+												<div class="members"> Wireframe, Copywriting, Research, Print Design, User research and testing, Website creation</div>
+
+												Liah Perez
+												<div class="members">Wireframe, Website creation, Research, User research and testing</div>
+
+												Nisha Sposato
+												<div class="members">Design comps, Brand development, User testing, Print Design</div></li>
+                           			 </ul>
+
+
+                            	</aside>
+
+
+                            	<div id="para">
+                            			<p>College students are bombarded by many different types of stressors. This collaborative project aims to give college students at RIT some insights to why they are stressed and ways to reduce their stress in a healthy manner. Insquire is a self-guided app that will inquire users about their feelings, and why they are stressed.
+                            			[Please click <a href="{{ url_for('static', filename='img/portfolio/insquire_presentation.pdf')}}" target="_blank">here</a> to view our process work.] </p>
+                            			<img class="img-responsive img-centered" src="{{ url_for('static', filename='img/portfolio/insquire0.png')}}" alt="">
+                            	</div>
+
+
+
+
+
+
+
+                            	<div id="para2">
+                            		<div class="insquire1">
+                            			<img id="margin1" class="img-responsive img-centered" src="{{ url_for('static', filename='img/portfolio/insquire1.png')}}" alt="">
+                            			<p>Insquire will then help them find the most efficient ways to relieve their stress depending on their particular situation.</p>
+                            		</div>
+
+
+
+
+
+ 									<div class="insquire12">
+                            			<img id="margin1" class="img-responsive img-centered" src="{{ url_for('static', filename='img/portfolio/insquire2.png')}}" alt="">
+                            			<p>Our app will collect the data of the users&rsquo; feelings, activities, and apps they have tried, to give insight about how they are feeling on a day to day basis in an interactive graph.</p>
+                            		</div>
+
+
+
+
+
+                            		<div class="insquire0">
+										<img class="img-responsive img-centered" src="{{ url_for('static', filename='img/portfolio/insquire3.png')}}" alt="">
+									</div>
+									<div class="insquire2">
+                            			<p>Insquire is unique in that it can be paired up with a smart phone&rsquo;s default health app or a fitness tracker, like Fitbit, to gather data and ask the users how they are feeling based on that data. For example, if the user wasn’t getting a lot of sleep lately, Insquire will notify the user and ask how they are doing. This makes the app a companion that will be helpful even if the user is not actively using the app.</p>
+                            		</div>
+
+
+
+                            		</div>
+                                <div id="app">
+                   						<h3 id="head">Try Insquire<a href="https://invis.io/JC4YX9MNP" target="_blank" class="visible-xs">here</a><a href="#" class="hidden-xs"> here</a>!</h3>
+                                </div>
+                            			<iframe width="438" height="930" src="https://invis.io/JC4YX9MNP" frameborder="0" allowfullscreen class="hidden-xs"></iframe>
+                             		</div>
+                             	</div>
+
+                             </div>
+                       <!--     <img class="img-responsive img-centered" src="img/portfolio/golden-preview.png" alt="">  -->
+
+                            <button type="button" class="btn btn-primary" id="appbutton" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio Modal 4 -->
+
+ <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Living Lolita</h2>
+
+                            <div id="des">
+                                <aside id="general">
+                                    <ul class="list-inline">
+                                        <li>Date: Fall 2015</li>
+                                        <li>Client: Kirakira: Global Lolita Meetup</li>
+                                        <li>Category: Branding and System Design </li>
+                                    </ul>
+                                </aside>
+                                <div id="para">
+                                    <p>Kirakira is an international annual Lolita meetup event that aims to connect Lolitas around the world. Lolita is a fashion that originated from Japan in the late 1970s, which is also used to refer to the people who wear the style. It is a cute, elegant, and modest style that went against the trend at the time that revealed more skin. There are many substyles under Lolita, each having its own unique feel. </p>
+
+                                 </div>
+
+
+                                 <div class="kira">
+
+                                    <div class="kpiece">
+                                        <img class="kimage" id="klogo" class="img-responsive img-centered" src="{{ url_for('static', filename='')}}img/portfolio/kirakira-logo.png" alt="">
+                                        <p>The identity for Kirakira reflects the Lolita clothing and lifestyle. The identity should be flexible, cute, and elegant to match the Lolita fashion. The accompanying systems design pieces each reflected upon the brand with variations.</p>
+                                    </div>
+
+
+                                    <div class="kpiece">
+                                    <h4 class="khead">Website</h4>
+                                        <img class="kimage" id="kweb" class="img-responsive img-centered" src="{{ url_for('static', filename='')}}img/portfolio/k-homepage.jpg" alt="">
+                                        <img class="kimage" id="kweb" class="img-responsive img-centered" src="{{ url_for('static', filename='')}}img/portfolio/k-webpages.jpg" alt="">
+                                        <p>The website is mainly focused on information and registration for the event. There are also pages featuring a brand each month and a gallery for Lolitas to share their coordinates.</p>
+                                    </div>
+
+
+                                    <div class="kpiece">
+                                    <h4 class="khead">App</h4>
+                                        <img class="kimage" id="kapp" class="img-responsive img-centered" src="{{ url_for('static', filename='img/portfolio/k-app.jpg')}}" alt="">
+                                        <div id="appscreens">
+                                            <img class="kimage" id="kapp1" class="img-responsive img-centered" src="{{ url_for('static', filename='img/portfolio/k-app1.')}}jpg" alt="">
+                                            <img class="kimage" id="kapp2" class="img-responsive img-centered" src="{{ url_for('static', filename='img/portfolio/k-app2.jpg')}}" alt="">
+                                            <img class="kimage" id="kapp3" class="img-responsive img-centered" src="{{ url_for('static', filename='img/portfolio/k-app3.jpg')}}" alt="">
+                                        </div>
+                                        <p>The Kirakira app is a place where Lolitas can socialized. The main feature is the meetup and Lolita locator. The meetup let’s Lolitas set up and attend meetup near then with ease. The locator help Lolita find each other to build a community.</p>
+                                    </div>
+
+
+                                    <div class="kpiece">
+                                    <h4 class="khead">Collateral</h4>
+                                        <img class="kimage" id="kcolla" class="img-responsive img-centered" src="{{ url_for('static', filename='img/portfolio/k-poster1.jpg')}}" alt="">
+                                        <img class="kimage" id="kcolla" class="img-responsive img-centered" src="{{ url_for('static', filename='img/portfolio/k-poster2.jpg')}}" alt="">
+                                        <p>These pieces help advertise the event with emphasis on individual substyles and community.</p>
+                                        <img class="kimage" id="kcolla" class="img-responsive img-centered" src="{{ url_for('static', filename='img/portfolio/k-bus.png')}}" alt="">
+                                        <p>The bus wrap shows of the cuteness of the style.</p>
+                                        <img class="kimage" id="kcolla" class="img-responsive img-centered" src="{{ url_for('static', filename='img/portfolio/k-band.png')}}" alt="">
+                                        <p>Attendees can choose the wristband color that matches their coordinate with bow pattern on the inside.</p>
+
+                                   </div>
+
+                                   <div class="kpiece">
+                                    <h4 class="khead">Event Signage</h4>
+                                        <img class="kimage" id="kcolla" class="img-responsive img-centered" src="{{ url_for('static', filename='img/portfolio/k-sign1.jpg')}}" alt="">
+                                        <img class="kimage" id="kcolla" class="img-responsive img-centered" src="{{ url_for('static', filename='img/portfolio/k-sign2.jpg')}}" alt="">
+                                        <img class="kimage" id="kcolla" class="img-responsive img-centered" src="{{ url_for('static', filename='img/portfolio/k-sign3.jpg')}}" alt="">
+                                       <p class="item-intro text-muted" id="kfpo">All photographs used in this project are from online sources.</p>
+                                   </div>
+                                 </div>
+
+
+                            </div>
+
+
+                            <button type="button" class="btn btn-primary" id="kbutton" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio Modal 5 -->
+
+
+ <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Answering Tough Questions</h2>
+
+                            <div id="des">
+                                <aside id="general">
+                                    <ul class="list-inline">
+                                        <li>Date: Spring 2016</li>
+                                        <li>Client: Now You Know</li>
+                                        <li>Category: Responsive Web Design </li>
+                                    </ul>
+                                </aside>
+                                <div id="para">
+                                    <p>Lots of parents are very awkward when it comes to answering their child’s “how do I know if I’m gay?” and other complicated questions. They are not prepared and can be startled or embarrassed to answer these questions that are being thrown at them. </p>
+
+                                    <p>It is important that parents are prepared to give age-appropriate answers to these kind of questions with confidence and credibility. </p>
+
+                                 </div>
+
+                                 <div class="kira">
+
+                                    <div class="kpiece">
+                                        <img class="img-responsive img-centered" src="{{ url_for('static', filename='img/portfolio/nyk-logo.png')}}" alt="">
+                                 <img class="img-responsive img-centered" src="{{ url_for('static', filename='img/portfolio/nyk-logo1.png')}}" alt="">
+
+                                    </div>
+                                    <div class="kpiece">
+                                    <hr/>
+                                    <img class="kimage" class="img-responsive img-centered" src="{{ url_for('static', filename='img/portfolio/nyk-sitemap.png')}}" alt="">
+                                        <img class="kimage" class="img-responsive img-centered" src="{{ url_for('static', filename='img/portfolio/nyk-desktop.png')}}" alt="">
+                                        <img class="kimage" class="img-responsive img-centered" src="{{ url_for('static', filename='img/portfolio/nyk-desktop1.png')}}" alt="">
+                                         <img class="kimage"  class="img-responsive img-centered" src="{{ url_for('static', filename='img/portfolio/nyk-desktop2.png')}}" alt="">
+                                          <img class="kimage"  class="img-responsive img-centered" src="{{ url_for('static', filename='img/portfolio/nyk-desktop3.png')}}" alt="">
+
+                                        </div>
+
+                                   <div class="kpiece">
+                                        <img class="kimage" class="img-responsive img-centered" src="{{ url_for('static', filename='img/portfolio/nyk-mobile.png')}}" alt="">
+                                        <div id="appscreens">
+                                            <img class="kimage" id="kapp1" class="img-responsive img-centered" src="{{ url_for('static', filename='img/portfolio/nyk-mobile2.png')}}" alt="">
+                                            <img class="kimage" id="kapp2" class="img-responsive img-centered" src="{{ url_for('static', filename='img/portfolio/nyk-mobile3.png')}}" alt="">
+                                            <img class="kimage" id="kapp3" class="img-responsive img-centered" src="{{ url_for('static', filename='img/portfolio/nyk-mobile4.png')}}" alt="">
+                                        </div>
+                                        <hr/>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="button" id="kbutton" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Portfolio Modal 6 -->
+
+ <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Newsletter Run</h2>
+
+                           <div id="des">
+                         		<aside id="general">
+                           			<ul class="list-inline">
+                                		<li>Date: May 2018 to Present</li>
+                                		<li>Client: Measured Marketing Inc.</li>
+                                		<li>Category: E-Newsletter Design </li>
+                            		</ul>
+                            	</aside>
+                            	<div id="para">
+                           		 <p>MMi Monthly is a newsletter designed for Measured Marketing Inc. to send out to sales representatives to help them increase the client base and help clients decide when to send relevant email adverts and website banner adverts with tips and suggestions. I was tasked to create these monthly newsletters from provided body copies. This assignment was very open and I was able to choose and implement a design style that would be used across all the newsletters. I decided to go with a style that uses simple graphics to help visualize key points and separate each section into easily digestible pieces.</p>
+                           		 </div>
+
+                            </div>
+
+                            <div id="margin">
+                                <img class="img-responsive img-centered" src="{{ url_for('static', filename='img/portfolio/newsletter1.jpg')}}" alt="">
+                            </div>
+                            <div id="margin">
+                                <img class="img-responsive img-centered" src="{{ url_for('static', filename='img/portfolio/newsletter2.jpg')}}" alt="">
+                            </div>
+                             <div id="margin">
+                                 <img class="img-responsive img-centered" src="{{ url_for('static', filename='img/portfolio/newsletter3.jpg')}}" alt="">
+                            </div>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="{{ url_for('static', filename='js/jquery.js')}}"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js')}}"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="{{ url_for('static', filename='js/classie.js')}}"></script>
+    <script src="{{ url_for('static', filename='js/cbpAnimatedHeader.js')}}"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="{{ url_for('static', filename='js/jqBootstrapValidation.js')}}"></script>
+    <script src="{{ url_for('static', filename='js/contact_me.js')}}"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="{{ url_for('static', filename='js/agency.js')}}"></script>
+
+</body>
+
+</html>
