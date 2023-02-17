@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block title %}Contact Form{% endblock %}
+
+{% block content %}
+<h1>Send your message to the Avatar</h1>
+<form action="#" method="post">
+    <p>Name:</p>
+    <p><input type="text" name="fullname"></p>
+    <p>Email:</p>
+    <p><input type="email" name="email"></p>
+    <p>Phone:</p>
+    <p><input type="tel" name="phone"></p>
+    <p>Message:</p>
+    <p><input type="text" name="message"></p>
+    <p><input type="submit" value="submit"></p>
+
+</form>
+{% endblock %}
