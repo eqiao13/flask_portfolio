@@ -1,12 +1,13 @@
 <!doctype html>
 <html>
-<title></title>
+<title>You've Sent the email</title>
 <body>
 {% with messages = get_flashed_messages() %}
   {% if messages %}
     <ul class=flashes>
     {% for message in messages %}
-      <li>{{ message }}</li>
+    <h1>Success! Your mail will to sent to the Avatar via Flying Bison ASAP!</h1>
+      <p>{{ message }}</p>
     {% endfor %}
     </ul>
   {% endif %}
