@@ -3,8 +3,12 @@ import os
 from flask import Flask, request, url_for, redirect, render_template, flash
 import requests
 
+import logging
+
+logger = logging.getLogger(__name__)
+
 app = Flask(__name__)
-app.secret_key = os.getenv("SECRET_KEY")
+app.config ["SECRET_KEY"] = os.getenv("SECRET_KEY")
 
 @app.route("/")
 def home():
@@ -28,15 +32,30 @@ def contact_form():
             return redirect(url_for('form_fail'))
         else:
             #connecting to the email server
-            response = requests.post('https://bebemail.edjeware.com/', headers={"API-ID": os.getenv("BEBEMAIL_API_ID"), "API-SECRET": os.getenv("BEBEMAIL_API_SECRET")}, json={"to": os.getenv("WEB_MASTER_EMAIL_ADDRESS"), "subject": "A message for the avatar", "body": f"You got an email from {contact_name}\nEmail: {contact_email}\nPhone number: {contact_phone}\nMessage: {contact_message}"})
+
+            response = requests.post(
+                'https://bebemail.edjeware.com/v1/emails',
+                 headers={
+                        "API-ID": os.getenv("BEBEMAIL_API_ID"),
+                        "API-SECRET": os.getenv("BEBEMAIL_API_SECRET")
+                        },
+
+
+                json={
+                    "to": os.getenv("WEB_MASTER_EMAIL_ADDRESS"),
+                    "subject": "A message for the avatar",
+                    "body": f"You got an email from {contact_name}\nEmail: {contact_email}\nPhone number: {contact_phone}\nMessage: {contact_message}",
+                }
+            )
             #breakpoint()
 
             #flashing message if it send or error and display those messages in a new link HTML page
-            status = response.raise_for_status()
-            if status == 200 or 202:
+            #status = response.raise_for_status()
+            if response.ok:
                 flash(f"You sent\n\n From: {contact_name}\n\n Email: {contact_email}\n\n Phone: {contact_phone}\n\n Message:{contact_message}")
                 return redirect(url_for("form_success"))
             else:
+                logger.error(response.content)
                 flash("Something went wrong, your email didn't go through.", 'error')
                 return redirect(url_for('form_fail'))
     else:
